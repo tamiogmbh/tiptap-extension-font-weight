@@ -1,7 +1,7 @@
 {
-  "name": "@tiptap/extension-font-weight",
+  "name": "@tamiogmbh/extension-font-weight",
   "description": "text font-weight extension for tiptap",
-  "version": "2.0.0-beta.209",
+  "version": "2.0.0-beta.209.1",
   "homepage": "https://tiptap.dev",
   "keywords": [
     "tiptap",
@@ -34,11 +34,19 @@
   },
   "devDependencies": {
     "@tiptap/core": "^2.0.0-beta.209",
-    "@tiptap/extension-text-style": "^2.0.0-beta.209"
+    "@tiptap/extension-text-style": "^2.0.0-beta.209",
+    "rollup": "^2.67.0",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.31.2"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/tamiogmbh/tiptap-extension-font-weight",
     "directory": ""
+  },
+  "scripts": {
+    "build": "rollup -c"
   }
 }
